@@ -149,9 +149,9 @@ uber_clone/
 ```
 
 ## 📌 Future Improvements
-Live GPS tracking (maps integration)
-Payment gateway integration
-Driver route optimization
-Demand and price optimization
-Time estimation using maps
+1. Live GPS tracking (maps integration)
+2. Payment gateway integration
+3. Driver route optimization
+4. Demand and price optimization
+5. Time estimation using maps
 
