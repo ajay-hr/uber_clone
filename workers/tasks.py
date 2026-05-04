@@ -1,8 +1,8 @@
-from app.services.matching_service import find_nearby_drivers
-from app.websocket.manager import manager
-from app.database import SessionLocal
-from app.models.trip import Trip
-from app.workers.celery_worker import celery
+from services.matching_service import find_nearby_drivers
+from websocket.manager import manager
+from database import SessionLocal
+from models.trip import Trip
+from workers.celery_worker import celery
 
 @celery.task
 def match_driver_task(lat, lng, vehicle_type, trip_id):
