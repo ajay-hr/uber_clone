@@ -1,16 +1,16 @@
 from fastapi import APIRouter, Depends, HTTPException, status, WebSocket, WebSocketDisconnect
 from sqlalchemy.orm import Session
-from app.database import get_db
-from app.models.trip import Trip
-from app.models.user import User
-from app.models.rating import Rating
-from app.schemas.trip import RideRequest, RideAccept, TripAction, OTPVerification, DriverLocationUpdate, SubmitRating
-from app.services.matching_service import acquire_lock, release_lock
-from app.services.pricing_service import calculate_fare, get_all_vehicle_prices
-from app.services.rating_service import get_user_ratings
-from app.services.otp_service import generate_otp, verify_otp
-from app.workers.tasks import match_driver_task
-from app.utils.id_generator import generate_id
+from database import get_db
+from models.trip import Trip
+from models.user import User
+from models.rating import Rating
+from schemas.trip import RideRequest, RideAccept, TripAction, OTPVerification, DriverLocationUpdate, SubmitRating
+from services.matching_service import acquire_lock, release_lock
+from services.pricing_service import calculate_fare, get_all_vehicle_prices
+from services.rating_service import get_user_ratings
+from services.otp_service import generate_otp, verify_otp
+from workers.tasks import match_driver_task
+from utils.id_generator import generate_id
 from datetime import datetime, timezone
 import logging
 from typing import Optional
