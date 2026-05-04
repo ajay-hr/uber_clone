@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from app.models.rating import Rating
-from app.models.user import User
-from app.utils.id_generator import generate_id
+from models.rating import Rating
+from models.user import User
+from utils.id_generator import generate_id
 from sqlalchemy import func
 
 def create_rating(db: Session, trip_id: str, rater_id: str, ratee_id: str, rating_type: str, score: int, comment: str = None):
