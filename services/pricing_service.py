@@ -1,4 +1,4 @@
-from app.services.distance_service import haversine
+from services.distance_service import haversine
 
 # Vehicle type pricing multipliers
 VEHICLE_MULTIPLIERS = {
