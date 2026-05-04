@@ -1,7 +1,7 @@
 import redis
-from app.config import REDIS_HOST, REDIS_PORT
-from app.models.driver_profile import DriverProfile
-from app.database import SessionLocal
+from config import REDIS_HOST, REDIS_PORT
+from models.driver_profile import DriverProfile
+from database import SessionLocal
 
 r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, decode_responses=True)
 
