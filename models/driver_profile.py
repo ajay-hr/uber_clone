@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, ForeignKey
-from app.database import Base
+from database import Base
 
 class DriverProfile(Base):
     __tablename__ = "driver_profiles"
