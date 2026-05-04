@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Integer, ForeignKey, Text
-from app.database import Base
+from database import Base
 
 class Rating(Base):
     __tablename__ = "ratings"
