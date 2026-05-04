@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-from app.config import DATABASE_URL
+from config import DATABASE_URL
 from fastapi import HTTPException
 
 if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
