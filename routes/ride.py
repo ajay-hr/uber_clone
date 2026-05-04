@@ -14,7 +14,7 @@ from utils.id_generator import generate_id
 from datetime import datetime, timezone
 import logging
 from typing import Optional
-from app.websocket.manager import manager
+from websocket.manager import manager
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
