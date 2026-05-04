@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
-from app.models.user import User
-from app.models.driver_profile import DriverProfile
-from app.utils.jwt import create_token
+from models.user import User
+from models.driver_profile import DriverProfile
+from utils.jwt import create_token
 from passlib.context import CryptContext
-from app.utils.id_generator import generate_id
+from utils.id_generator import generate_id
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
