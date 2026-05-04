@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Float, DateTime, Boolean
 from datetime import datetime
-from app.database import Base
+from database import Base
 
 class Trip(Base):
     __tablename__ = "trips"
